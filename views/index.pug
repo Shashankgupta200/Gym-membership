@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    //- <title>This is the title of the website</title>
+    <title>#{title}</title>
+    style 
+        include ../static/style.css
+</head>
+<body> 
+<nav>
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/">Services</a></li>
+    <li><a href="/">Contact Us</a></li>
+</ul>
+</nav>
+<div class="container">
+    <h2> Fill out  this form to get offer in gym </h2>
+    <form action="/" id="contact" method="post" >       <!--Here methof will give us the required action to be done with the form -->
+        <input type="text" name="name" id="name" placeholder="Enter yout name">
+        <input type="text" name="age" id="age" placeholder="Enter yout age">
+        <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address here"></textarea>
+        <textarea name="about" id="about" cols="30" rows="10" placeholder="Tell something about you"></textarea>
+        <button type="submit" id="btn">Submit</button>
+    </form>
+
+</div>
+<!-- //- <p>
+//- | #{content}                                //- '|' this is used because in pug if we want to run something like html we need this otherwise it will take the comment like a command
+//- |  This is a plain text using pug 
+//- </p> -->
+</body>
+</html>
